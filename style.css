@@ -17,7 +17,7 @@ body {
 
 .main {
   display: flex;
-  box-shadow: 3px 1px 8px #dbdbdb;
+
   height: 100vh;
   min-height: 616px;
   min-width: 500px;
@@ -44,6 +44,7 @@ body {
   height: 100vh;
   /* max-width: 450px; */
   min-width: 450px;
+  width: 500px;
   min-height: 616px;
   vertical-align: top;
   position: relative;
@@ -55,9 +56,36 @@ body {
   background-color: white;
   position: relative;
   z-index: 1;
+  flex: 1.7;
 }
 
 .header,
 .foot-section {
   background-color: #f7f7f7;
+}
+
+.foot-section {
+  flex: 0.7;
+}
+
+.logo {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.4);
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 3;
+  top: 150px;
+  width: 500px;
+  padding: 10px 0 10px 0;
+}
+
+.logo-h1 {
+  margin: 0;
+  color: #eee;
+}
+
+.odin {
+  height: 8rem;
+  width: 6rem;
 }
