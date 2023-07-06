@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="main">
@@ -21,11 +27,51 @@
         />
       </div>
       <div class="form-container">
-        <div class="header"></div>
+        <div class="header">
+          <p class="header-text">
+            ipsum dolor sit amet consectetur, adipisicing elit. Temporibus quis
+            dolor quisquam vero impedit voluptas adipisci suscipit autem nihil?
+            Eaque corrupti in illo eveniet perferendis cum quo facere at quas
+            quidem mollitia adipisci omnis eligendi blanditiis, ducimus
+            exercitationem dolorum excepturi? Voluptatem ducimus ea odit! Sunt,
+          </p>
+        </div>
         <div class="form">
-          <h2>Sign-up Form</h2>
-          <form>
-            <!-- Your form fields here -->
+          <h2 class="form-title">Sign-up Form</h2>
+          <form action method="get" class="fields-container">
+            <div class="group-1">
+              <div class="fields">
+                <label for="first-name">FIRST NAME</label>
+                <input type="text" id="first-name" name="first-name" />
+              </div>
+              <div class="fields">
+                <label for="email">EMAIL</label>
+                <input type="text" id="femail" name="email" />
+              </div>
+              <div class="fields">
+                <label for="password">PASSWORD</label>
+                <input type="text" id="password" name="password" />
+              </div>
+            </div>
+
+            <div class="group-2">
+              <div class="fields">
+                <label for="last-name">LAST NAME</label>
+                <input type="text" id="flast-name" name="last-name" />
+              </div>
+              <div class="fields">
+                <label for="phone-number">PHONE NUMBER</label>
+                <input type="text" id="phone-number" name="phone-number" />
+              </div>
+              <div class="fields">
+                <label for="confirm-password">CONFIRM PASSWORD</label>
+                <input
+                  type="text"
+                  id="confirm-password"
+                  name="confirm-password"
+                />
+              </div>
+            </div>
           </form>
         </div>
         <div class="foot-section"></div>
