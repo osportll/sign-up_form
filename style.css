@@ -18,7 +18,7 @@ body {
 
 .main {
   display: flex;
-
+  position: relative;
   height: 100vh;
   min-height: 616px;
   min-width: 500px;
@@ -44,7 +44,7 @@ body {
   width: 500px;
   min-height: 616px;
   vertical-align: top;
-  position: relative;
+  /* position: relative; */
   z-index: 2;
 }
 
@@ -53,7 +53,7 @@ body {
   background-color: white;
   position: relative;
   z-index: 1;
-  flex: 2;
+  flex: 1;
 }
 
 .header,
@@ -93,6 +93,17 @@ body {
 
 .header-text {
   margin: 40px 100px 0 40px;
+  max-width: 550px;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+#text-3.header-text {
+  margin: 20px 0 0 40px;
+}
+
+#text-2.header-text {
+  margin: 5px 0 20px 40px;
 }
 
 .form-title {
@@ -108,7 +119,8 @@ body {
   margin-left: 40px;
 }
 
-input {
+.group-1 input,
+.group-2 input {
   border: solid 1px rgb(207, 207, 207);
   width: 270px;
   height: 30px;
@@ -119,9 +131,10 @@ input {
   appearance: none;
 }
 
-input:focus {
-  box-shadow: 2px 2px 3px #8f8f8f;
-  border: solid 1px #2167a1;
+.group-1 input:focus,
+.group-2 input:focus {
+  box-shadow: 2px 2px 3px #c9c9c9;
+  border: solid 2px #229a72;
   outline: none;
 }
 
@@ -129,4 +142,64 @@ label {
   font-size: 13px;
   font-weight: 400;
   letter-spacing: 2px;
+}
+
+.submit-button {
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.foot-text {
+  margin-top: 5px;
+  margin-left: 48px;
+}
+
+.link {
+  margin: 0;
+  font-size: 15px;
+}
+
+.submit-button {
+  appearance: none;
+  border: none;
+  border-radius: 10px;
+  background-color: #229a72;
+  font-weight: 700;
+  font-size: 18px;
+  color: white;
+  padding: 15px;
+  width: 230px;
+  box-shadow: 2px 3px 3px #adadad;
+}
+
+.submit-button:hover {
+  background-color: #1b7c5c;
+}
+
+.foot-text a {
+  text-decoration: none;
+  color: #229a72;
+  font-weight: 700;
+}
+
+.foot-text a:hover {
+  color: #1c7456;
+}
+
+.img-footer {
+  position: absolute;
+  z-index: 3;
+  bottom: 10px;
+  left: 150px;
+  color: rgba(211, 211, 211, 0.3);
+  font-weight: 700;
+}
+
+.img-footer a {
+  text-decoration: none;
+  color: #3b5472;
+}
+
+.img-footer a:hover {
+  color: #382b45;
 }
